@@ -35,38 +35,30 @@ limitations under the License.
 
 > Test if a value is a 1-dimensional [ndarray][@stdlib/ndarray/ctor]-like object containing single-precision complex floating-point numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-complex64vector-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isComplex64VectorLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isComplex64VectorLike = require( 'path/to/vendor/umd/assert-is-complex64vector-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isComplex64VectorLike;
-})();
-</script>
+var isComplex64VectorLike = require( '@stdlib/assert-is-complex64vector-like' );
 ```
 
 #### isComplex64VectorLike( value )
@@ -93,15 +85,10 @@ var bool = isComplex64VectorLike( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var isComplex64VectorLike = require( '@stdlib/assert-is-complex64vector-like' );
 
 var buffer = new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
 var arr = ndarray( 'complex64', buffer, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -117,11 +104,6 @@ out = isComplex64VectorLike( {} );
 
 out = isComplex64VectorLike( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -131,6 +113,14 @@ out = isComplex64VectorLike( null );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-complex128vector-like`][@stdlib/assert/is-complex128vector-like]</span><span class="delimiter">: </span><span class="description">test if a value is a 1-dimensional ndarray-like object containing double-precision complex floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/assert-is-ndarray-like`][@stdlib/assert/is-ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is ndarray-like.</span>
+-   <span class="package-name">[`@stdlib/assert-is-vector-like`][@stdlib/assert/is-vector-like]</span><span class="delimiter">: </span><span class="description">test if a value is a 1-dimensional ndarray-like object.</span>
 
 </section>
 
@@ -205,7 +195,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-complex64vector-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-complex128vector-like]: https://github.com/stdlib-js/assert-is-complex128vector-like
+
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
+
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like
+
+<!-- </related-links> -->
 
 </section>
 
