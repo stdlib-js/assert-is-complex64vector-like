@@ -114,6 +114,14 @@ out = isComplex64VectorLike( null );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-complex128vector-like`][@stdlib/assert/is-complex128vector-like]</span><span class="delimiter">: </span><span class="description">test if a value is a 1-dimensional ndarray-like object containing double-precision complex floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/assert-is-ndarray-like`][@stdlib/assert/is-ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is ndarray-like.</span>
+-   <span class="package-name">[`@stdlib/assert-is-vector-like`][@stdlib/assert/is-vector-like]</span><span class="delimiter">: </span><span class="description">test if a value is a 1-dimensional ndarray-like object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -188,6 +196,16 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-complex64vector-like/main/LICENSE
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-complex128vector-like]: https://github.com/stdlib-js/assert-is-complex128vector-like
+
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
+
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like
+
+<!-- </related-links> -->
 
 </section>
 
