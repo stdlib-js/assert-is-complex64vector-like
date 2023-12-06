@@ -35,30 +35,14 @@ limitations under the License.
 
 > Test if a value is a 1-dimensional [ndarray][@stdlib/ndarray/ctor]-like object containing single-precision complex floating-point numbers.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-complex64vector-like
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isComplex64VectorLike = require( '@stdlib/assert-is-complex64vector-like' );
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@deno/mod.js';
 ```
 
 #### isComplex64VectorLike( value )
@@ -66,8 +50,8 @@ var isComplex64VectorLike = require( '@stdlib/assert-is-complex64vector-like' );
 Tests if a value is a 1-dimensional [ndarray][@stdlib/ndarray/ctor]-like object whose underlying data type is `complex64`.
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var ndarray = require( '@stdlib/ndarray-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 
 var arr = ndarray( 'complex64', new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
 
@@ -86,9 +70,9 @@ var bool = isComplex64VectorLike( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
-var Complex64Array = require( '@stdlib/array-complex64' );
-var isComplex64VectorLike = require( '@stdlib/assert-is-complex64vector-like' );
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@deno/mod.js';
 
 var buffer = new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
 var arr = ndarray( 'complex64', buffer, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -135,7 +119,7 @@ out = isComplex64VectorLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -195,15 +179,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-complex64vector-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-complex128vector-like]: https://github.com/stdlib-js/assert-is-complex128vector-like
+[@stdlib/assert/is-complex128vector-like]: https://github.com/stdlib-js/assert-is-complex128vector-like/tree/deno
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/deno
 
-[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like/tree/deno
 
 <!-- </related-links> -->
 
