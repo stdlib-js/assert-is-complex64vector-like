@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-complex64vector-like/tags). For example,
+
+```javascript
 import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@v0.1.0-deno/mod.js';
 ```
 
@@ -72,7 +77,7 @@ var bool = isComplex64VectorLike( arr );
 ```javascript
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@v0.1.0-deno/mod.js';
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@deno/mod.js';
 
 var buffer = new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
 var arr = ndarray( 'complex64', buffer, [ 4 ], [ 1 ], 0, 'row-major' );
