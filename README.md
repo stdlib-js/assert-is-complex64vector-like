@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@esm/index.mjs';
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@v0.2.3-esm/index.mjs';
 ```
 
 #### isComplex64VectorLike( value )
@@ -77,7 +77,7 @@ var bool = isComplex64VectorLike( arr );
 
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@esm/index.mjs';
+import isComplex64VectorLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex64vector-like@v0.2.3-esm/index.mjs';
 
 var buffer = new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
 var arr = ndarray( 'complex64', buffer, [ 4 ], [ 1 ], 0, 'row-major' );
